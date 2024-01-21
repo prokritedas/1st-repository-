@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WD-Prokritee</title>
+    <link rel="icon" href="https://scontent.fdac31-1.fna.fbcdn.net/v/t39.30808-6/285585114_1405001253246042_8851953899149481574_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=9c7eae&_nc_eui2=AeF3NFeK6l4SeoFqYSgGSDjgc3KlRcd-x6FzcqVFx37HofzyFkK14PKec3yfkrl-AqNWH-tGNpwoVs8Bie96fCZo&_nc_ohc=0RZm4XlxA88AX_wB7RB&_nc_ht=scontent.fdac31-1.fna&oh=00_AfC6CXTVAJ_a9m5kbic_YljLjDLfz1tBwV1bzA0wzo6RkA&oe=65A5F5C1">
+
+<!-- google fonts   -->
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Dancing+Script&family=Lemon&display=swap" rel="stylesheet">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        body {
+            background-color: black;
+        }
+        #prokritee{
+            font-family: lemon;
+        }
+        /* animation hero */
+        #profilediv{
+                animation: name duration timing-function delay iteration-count direction fill-mode;
+                animation-name: hero;
+                animation-duration: 70s;
+               animation-iteration-count: infinite;
+
+           }
+
+           @keyframes hero{
+            0%,10%,20%,30%,40%,50%,60%,70%,80%,90%{
+                background-color: rgba(9, 63, 80, 0.788);
+
+            }
+            5%,25%,45%,65%,85%,100%{
+                background-color: rgba(255, 255, 255, 0.877);
+            }
+            15%,35%,55%,75%,95%{
+                background-color: rgba(222, 184, 135, 0.712);
+
+            }
+           }
+
+           /* animation nav  */
+           #nav{
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+                animation-name: nav;
+                animation-duration: 50s;
+               animation-iteration-count: infinite;
+        }
+           @keyframes nav{
+            0%,10%,20%,30%,40%,50%,60%,70%,80%,90%{
+                background-color: rgba(255, 255, 255, 0.877);
+               
+            }
+            5%,25%,45%,65%,85%,100%{
+                background-color: rgba(247, 251, 253, 0.712);
+            }
+            15%,35%,55%,75%,95%{
+                background-color: rgba(7, 51, 65, 0.486);
+            }
+           }
+            #thanks{
+                font-family: Lemon;
+                font-weight:100 ;
+            }
+
+           /* animaation thanks  */
+           #thanks{
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+                animation-name: thanks;
+                animation-duration: 30s;
+               animation-iteration-count: infinite;
+        }
+           @keyframes thanks{
+            0%,10%,20%,30%,40%,50%,60%,70%,80%,90%{
+                color: black;
+               
+            }
+            5%,25%,45%,65%,85%,100%{
+                color: rgba(13, 213, 240, 0.945);
+            }
+            15%,35%,55%,75%,95%{
+                color: rgba(8, 134, 236, 0.952);
+            }
+           }
+
+           #name{
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+                animation-name: name;
+                animation-duration: 7s;
+               animation-iteration-count: infinite;
+        }
+
+        @keyframes name{
+            0%,10%,20%,30%,40%,50%,60%,70%,80%,90%{
+              background-color: rgba(70, 69, 67, 0.397);
+               color: aliceblue;
+            }
+            5%,25%,45%,65%,85%,100%{
+              background-color: rgba(27, 27, 26, 0.705);
+               color: aliceblue;
+
+            }
+            15%,35%,55%,75%,95%{
+              background-color: rgba(14, 13, 13, 0.774);
+              color: aliceblue;
+                
+            }
+           }
+
+           
+           /* media  */
+        @media only screen and (min-width: 700px){
+            #profile{
+                width: 40%;
+                height: 75vh;
+                display: block;
+            }
+            #client{
+                width: 70%;
+            }
+        }
+        @media only screen and (max-width: 600px){
+            #client{
+                width: 5%;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+<!-- nav start  -->
+<div class=" nav-item navbar-brand justify-content-center fs-3 ">
+    <a href="#" class="nav-link text-center text-white " id="prokritee"><span class="text-success ">WD</span>-<span class="text-primary ">PrOKrItEE</span></a>
+</div>
+
+<nav class="nav nav-tabs justify-content-between   " id="nav">
+    
+    
+    <div class="d-flex gap-2 ">
+    
+        <div class=" nav-item text-start   ">
+            <a href="#" class="nav-link ">home</a>
+        </div>
+
+    <div class=" nav-item text-start   ">
+        <a href="#" class="nav-link ">about us</a>
+    </div>
+    <div class=" nav-item p-0 ">
+        <a href="#" class="nav-link ">contact us</a>
+    </div> 
+    <!-- <div class=" nav-item p-0 ">
+        <a href="#" class="nav-link ">skill</a>
+    </div> -->
+   
+    <div class=" nav-item  ">
+        <div class="dropdown nav-link ">
+            <a class=" dropdown-toggle text-decoration-none" href="#" role="button" data-bs-toggle="dropdown" >
+              service
+            </a>
+          
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item text-decoration-none " href="#">website</a></li>
+              <li><a class="dropdown-item text-decoration-none" href="#">digital marketing</a></li>
+              <li><a class="dropdown-item text-decoration-none" href="#">graphics desgin</a></li>
+              <li><a class="dropdown-item text-decoration-none" href="#">testimonial</a></li>
+            </ul>
+          </div>
+    </div>
+    </div>
+    
+    
+    <div class="nav-item  ">
+        <input type="submit" class="btn btn-outline-primary rounded-3" value="log in">
+        <input type="submit" class="btn btn-outline-primary rounded-3 pe-3 " value="register now">
+    </div>
+    
+        </nav>
+        <!-- nav finish -->
+    
+    <!-- hero start  -->
+   <div class="  m-lg-auto d-flex justify-content-center  " id="profilediv">
+    <img class="col-4 rounded-circle justify-content-center pt-2 mt-3 " id="profile" src="https://scontent.fdac31-1.fna.fbcdn.net/v/t39.30808-6/285585114_1405001253246042_8851953899149481574_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=9c7eae&_nc_eui2=AeFq9vEyuMjtCFLd8aT7dIkIc3KlRcd-x6FzcqVFx37HoeZywLa3JeVTPLzbPjnsTjSk5Sx81-ZOoqlyM1CUp3di&_nc_ohc=Tc3k2FQTNUUAX93tdMu&_nc_ht=scontent.fdac31-1.fna&oh=00_AfDkye1qZ8tpNad-swPw3NFIS_-h3eh2BS8_m2eKD45Sdw&oe=65ABE481" alt="" >
+    
+    <!-- <img class="col-4 rounded-circle justify-content-center pt-2 mt-3 " id="profile" src="mee.jpg" alt="" > -->
+    
+    </div>
+    
+
+
+    
+<div class="" >
+    <div class="container-fluid  shadow p-2  pt-2 m-0" id="name">
+
+            <h1 class="text-center ">I am <span class="text-success ">Pro</span>kri<span class="text-primary ">tee</span>,</h1>
+            <h3 class="text-center ">a WEB-DEVELOPER. </h3>
+            <h6 class="text-center ">grow your business up</h6>
+            <p class="text-center ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis error iste fugiat, vitae facere perferendis. Reprehenderit?</p>
+    
+    </div>
+  
+
+<div class="justify-content-end ps-lg-5 p-3  ">
+        
+   <a href="#">
+    <img class="col-4 ps-2 " src="https://images04.nicepage.com/feature/511177/create-any-website-with-powerful-website-builder-website-builder.jpg" alt="">
+   </a>
+   <a href="#">
+
+    <img class="col-4  ps-2 " src="https://colorlib.com/wp-content/uploads/sites/2/library-website-design-1.jpg" alt="">
+   </a>
+
+   <a href="#">
+
+    <img class="col-4  ps-2 " src="https://i.graphicmama.com/blog/wp-content/uploads/2020/07/09110116/website-design-idea-gradients-in-web-design-example-4.jpg" alt="">
+   </a>
+
+   <a href="#">
+
+    <img class="col-4  ps-2 " src="https://prioritypixels.co.uk/wp-content/uploads/2022/02/50-Best-Web-Design-Aegncy-Websites-2022.jpg" alt="">
+</a>
+
+
+
+</div>
+<!-- hero finish  -->
+
+   
+<!-- what we do 3rd start -->
+
+<div class="m-3 bg- row text-white" class="three">
+    <h5 class="text-start text-primary  pt-3 p-3 border border-white shadow  ">What We Do are <i class="bi bi-arrow-down-circle-fill m-2 "></i></h5>
+    <h2 class="text-start text-white  p-3 pt-0 ">We provide the perfect solution to your business Growth</h2>
+     
+        <div class="col m-5">
+            <i class="bi bi-person-arms-up  fs-1 p-4" ></i>
+                <div class="card-title ps-4">
+                    <h3 class="text- ">Shine in your Business</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <h5>learn more <i class="bi bi-arrow-right-square-fill"></i> </h5>
+                </div>
+        </div>
+        
+        <div class="m-5 col ">
+            <i class="bi bi-balloon-heart fs-1 p-4 "></i>
+            <div class="card-title ps-4 ">
+                <h3 class="text- ">improve brand loyality</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <h5>learn more <i class="bi bi-arrow-right-square-fill"></i> </h5>
+
+            </div>
+        </div>
+
+        <div class="m-5 col ">
+
+            <i class="bi bi-bar-chart-steps fs-1 p-4 "></i>
+            <div class="card-title ps-4">
+                <h3 class="text- ">improve Business Model</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <h5>learn more <i class="bi bi-arrow-right-square-fill"></i> </h5>
+
+            </div>
+        </div>
+</div>
+<!-- 3rd finish  -->
+
+
+<!-- skill start -->
+<div class="container bg-  ">
+             
+            <h3 class="text-center text-success ">My Skills <i class="bi bi-arrow-down-circle-fill m-2 "></i></h3>
+
+        <div class="m-3 p-3 ">
+
+             <div class="progress  " role="progressbar" aria-valuenow="75">
+                <div class="progress-bar w-100    progress-bar-striped progress-bar-animated " >   
+                 HTML 100%
+                </div>
+            </div>
+        </div>
+
+
+
+   <div class="m-3 p-3 ">
+       <div class="progress " role="progressbar" aria-valuenow="75">
+             <div class="progress-bar progress-bar-striped progress-bar-animated " style="width: 90%" >   
+             CSS 90%
+             </div>
+        </div>
+   </div>
+
+   <div class="m-3 p-3 ">
+        <div class="progress " role="progressbar" aria-valuenow="75">
+         <div class="progress-bar progress-bar-striped progress-bar-animated " style="width: 75%" >   
+          Bootstrap 75%
+         </div>
+         </div>
+    </div>  
+</div>
+
+       
+
+<!-- 5th section start -->
+
+<div class="m-5 row bg- text-white"  class="fours">
+
+    <div class="m-1  col border-end border-2 " class="foursd">
+        <i class="bi bi-projector-fill  fs-1 "></i>
+        <h5>completed project</h5>
+        <h2 class="text-success  ">100+</h2>
+    </div>
+
+
+    <div class="m-1  col  border-end border-2 " class="foursd">
+        <i class="bi bi-person-hearts fs-1 "></i>
+        <h5>customer satisfaction</h5>
+        <h2 class="text-success  ">90%</h2>
+    </div>
+
+    <div class="m-1  col  border-end border-2 " class="foursd">
+        <i class="bi bi-currency-exchange fs-1 "></i>
+        <h5>raised by clients</h5>
+     <h2 class="text-success   " ><i class="bi bi-currency-dollar"></i>10M</h2>
+    
+    </div>
+
+    <div class="m-1  col border-end border-2 " class="foursd">
+        <i class="bi bi-calendar fs-1 "></i>
+        <h5>years in business</h5>
+        <h2 class="text-success  ">2 years</h2>
+    </div>
+</div>
+
+
+
+<!-- portfolio -->
+         
+    <div class="m-5 shadow border border-start text-white bg-black  ">
+        <h4 class="text-start text-primary  p-3 ">Our Portfoliyo</h4>
+        <h2 class="col p-2">We Peovide The Perfect solution to your business growth</h2>
+ 
+            <div class="row mt-3 ">
+            <div class="col-5 m-2  ">
+
+   <a href="#">
+
+    <img  class="col-10 " src="https://assets.designhill.com/resize_img.php?atyp=page_file&pth=ft_ca_sl2||258||block3_image_img&flp=1552565588-5960652605c8a45545ee1f3-64865960.png" alt=""> 
+    </a>
+                <p><b>WEbsite Desgin and developing for owner needs</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur numquam animi culpa, maiores et nam.</p>
+            </div>
+
+            <div class="col-5 m-2  ">
+                <a href="#">
+
+                <img  class="col-10 " src="https://www.newperspectivestudio.co.za/wp-content/uploads/2023/02/Construction-website-design.jpg" alt="">
+                </a>
+                <p><b>WEbsite Desgin and developing for owner needs</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur numquam animi culpa, maiores et nam.</p>
+            </div>
+
+            <div class="col-5 m-2  ">
+                <a href="#">
+
+                <img  class="col-10 " src="https://res.cloudinary.com/upwork-cloud/image/upload/c_scale,w_400/v1698790201/catalog/1391712132544589824/fbgfcgmopjmom5qz4nib.jpg" alt="">
+                </a>
+                <p><b>WEbsite Desgin and developing for owner needs</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur numquam animi culpa, maiores et nam.</p>
+            </div>
+
+            <div class="col-5 m-2  ">
+                <a href="#">
+                <img  class="col-10 " src="https://blog.hubspot.com/hs-fs/hubfs/freeportfolio_2.webp?width=624&height=362&name=freeportfolio_2.webp" alt="">
+                </a>
+                <p><b>WEbsite Desgin and developing for owner needs</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur numquam animi culpa, maiores et nam.</p>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <!-- hire me  -->
+        <div class="container text-white bg-black  justify-content-center shadow shadow-wh border border-1 border-primary ">
+            <div class="p-1 ">
+                <h2 class="text-primary  text-center   "> Hire your expert web-desginer here</h2>
+                <form action="#" method="post" >
+                    <label for="email" class="form-label  ">email address</label>
+                    <input type="email" class="form-control   ">
+                    <div id="emailHelp" class="form-text text-white ">We'll never share your email with anyone else.</div>
+
+                    <div class="mb-3 mt-3 ">
+                        <label  class="form-label">Password</label>
+                        <input type="password" class="form-control">
+                    </div>
+
+                    <div class="mb-3 mt-3 ">
+                        <label  class="form-label">country</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="mb-3 form-check  ">
+                        <input type="checkbox" class="form-check-input ">
+                        <label for="" class="form-check-label ">check me out</label>
+                    </div>
+
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+
+    <!-- csutomer says about us  -->
+
+    <div class="container  mt-5  border border-2 shadow  bg-black ">
+        <div class="d-flex flex-column justify-content-center ">
+                <h4 class="text-primary p-3  "> Our testimonials</h4>
+
+            <h5 class="text-start text-white m-2">what our customers say about us <i class="bi bi-arrow-down-circle-fill m-2 "></i> </h5>
+
+            
+        </div>
+
+      <!-- from here clients start  -->
+        <div class="col-12 pt-5 text-white " id="review">
+            <h3 class="text-primary p-2 ">the review we got from our clients </h3>
+
+            <div class="d-flex ">
+              
+                <img src="https://images.unsplash.com/photo-1615109398623-88346a601842?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&   ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG1hbnxlbnwwfHwwfHx8MA%3D%3D" class="rounded-circle  " id="client" style="width: 8%;" alt="">
+                <div class="border-2 border-primary  border-end">
+                <h6 class=" p-2 ">chris Evan</h6>
+                <p class=" p-2 ">I found my budiness more profitable with my website.</p>
+            </div>
+                
+            </div>
+            <i class="bi bi-star-fill text-warning "></i> <i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill  text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-half text-warning"></i>
+
+
+            <div class="d-flex ">
+              
+                <img src="https://images.unsplash.com/photo-1615109398623-88346a601842?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&   ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG1hbnxlbnwwfHwwfHx8MA%3D%3D" class="rounded-circle  "id="client" style="width: 8%;" alt="">
+                <div class="border-2 border-primary  border-end">
+                <h6 class=" p-2 ">chris Evan</h6>
+                <p class=" p-2 ">I found my budiness more profitable with my website.</p>
+            </div>
+                
+            </div>
+            <i class="bi bi-star-fill text-warning "></i> <i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill  text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-half text-warning"></i>
+
+
+
+            <div class="d-flex ">
+              
+                <img src="https://images.unsplash.com/photo-1615109398623-88346a601842?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&   ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG1hbnxlbnwwfHwwfHx8MA%3D%3D" class="rounded-circle  " id="client" style="width: 8%;" alt="">
+                <div class="border-2 border-primary  border-end">
+                <h6 class=" p-2 ">chris Evan</h6>
+                <p class=" p-2 ">I found my budiness more profitable with my website.</p>
+            </div>
+                
+            </div>
+            <i class="bi bi-star-fill text-warning "></i> <i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill  text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-half text-warning"></i>
+
+
+            <div class="d-flex ">
+              
+                <img src="https://images.unsplash.com/photo-1615109398623-88346a601842?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&   ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG1hbnxlbnwwfHwwfHx8MA%3D%3D" class="rounded-circle  " id="client" style="width: 8%;" alt="">
+                <div class="border-2 border-primary  border-end">
+                <h6 class=" p-2 ">chris Evan</h6>
+                <p class=" p-2 ">I found my budiness more profitable with my website.</p>
+            </div>
+                
+            </div>
+            <i class="bi bi-star-fill text-warning "></i> <i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill  text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-half text-warning"></i>
+
+
+            <div class="d-flex ">
+              
+                <img src="https://images.unsplash.com/photo-1615109398623-88346a601842?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&   ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG1hbnxlbnwwfHwwfHx8MA%3D%3D" class="rounded-circle  " id="client" style="width: 8%;" alt="">
+                <div class="border-2 border-primary  border-end">
+                <h6 class=" p-2 ">chris Evan</h6>
+                <p class=" p-2 ">I found my budiness more profitable with my website.</p>
+            </div>
+                
+            </div>
+            <i class="bi bi-star-fill text-warning "></i> <i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill  text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-half text-warning"></i>
+
+
+        </div>
+
+    
+    </div>
+
+
+<!-- thank you  -->
+
+    <div class="container m-2 p-2 justify-content-center ">
+        <h2 class="mt-5 pt-3 text-center " id="thanks">Thank You</h2>
+        <p class="text-center text-white ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa deleniti quod, ipsum pariatur reiciendis veniam magnam quaerat perspiciatis incidunt delectus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, voluptates!</p>
+    </div>
+
+
+<!-- thank you finish  -->
+
+
+
+<!-- footer  -->
+
+<footer class="container-fluid bg-black mt-5 ">
+    <h2 class="text-center text-white ">WD-PrOKrItE <i class="fa-solid fa-champagne-glasses"></i> </h2>
+    <div class="border border-2  border-bottom border-danger container-sm "></div>
+    <h5 class="text-center text-white  m-1  container-fluid  ">grow your business</h5> <br>
+    <div class="row text-white">
+       <div class="col">
+          <h6>home</h6>
+          <a href="#">card</a> <br>
+          <a href="#">favourite</a> <br>
+          <a href="#">items</a> <br>
+       </div>
+    
+       <div class="col">
+          <h6>about</h6>
+          <a href="#">card</a> <br>
+          <a href="#">favourite</a> <br>
+          <a href="#">items</a> <br>
+       </div>
+    
+       <div class="col">
+          <h6>contact</h6>
+          <a href="#">card</a> <br>
+          <a href="#">favourite</a> <br>
+          <a href="#">items</a> <br>
+       </div>
+    
+       <div class="col">
+          <h6>book now</h6>
+          <a href="#">card</a> <br>
+          <a href="#">favourite</a> <br>
+          <a href="#">items</a> <br>
+       </div>
+       
+       <div class="col">
+          <h6>services</h6>DeV-PrOKrItE
+          <a href="#">skills</a> <br>
+          <a href="#">review</a> <br>
+          <a href="#">nanna web</a> <br>
+          <a href="#">languages</a> <br>
+          <a href="#">web-log-in</a> <br>
+       </div>
+       
+       
+    </div> <br>
+     
+     <h6 class="text-justify text-white  "> orem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur perferendis alias ipsum voluptatibus deserunt asperiores nesciunt deleniti? Repellat eius vel deleniti, quisquam quibusdam, nulla voluptatibus inventore ipsum enim odit tempore impedit repudiandae error minus optio harum. Unde blanditiis, temporibus voluptate nulla recusandae ab veritatis amet eveniet nisi explicabo libero dolores! </h6>
+    
+     <br>
+     <div class="text-white fs-3 text-center m-1 row ">
+       <div class=" p-1 text-primary col"><a href="#" ><i class="bi bi-facebook p-2 "></i></a><a href="#" ><i class="bi bi-youtube "></i></a></div> <br>
+        
+       
+     </div>
+     <br>
+     </footer>
+     <div class="text-center text-white  container-fluid" style="background-color: rgba(66, 59, 59, 0.671);"> designed by prokriteedas@2024</div>
+    
+    <!-- footer finish -->
+
+
+
+
+</body>
+</html>
