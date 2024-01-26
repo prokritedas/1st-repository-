@@ -16,11 +16,17 @@
 
     <style>
         #nav-item:hover{
-           color: blue; 
+           color: blue;
         }
         #event:hover{
             background-color: rgb(180, 59, 228);;
             color: aliceblue;
+        }
+        #full{
+            background-image: url("https://www1.chester.ac.uk/sites/default/files/styles/hero/public/Events%20Management%20festival%20image.jpg?itok=eJ3k-5R6");
+            background-repeat: no-repeat;
+            background-size: auto;
+        
         }
     </style>
 
@@ -33,12 +39,12 @@
 
     <nav class="container-fluid justify-content-end    nav  ps-lg-5 pb-2   " style="background-color: rgb(7, 7, 7);">
 
-        <a href="#" class=" p-2 nav-item text-decoration-none" style="color: rgb(252, 251, 251);" id="">home</a>
-        <a href="#" class="p-2 nav-item text-decoration-none  " style="color: rgb(252, 250, 248);" id="">about </a>
-        <a href="#" class="p-2 nav-item text-decoration-none  " style="color: rgb(247, 244, 242);" id="">catagories</a>
-        <a href="#" class="text-decoration-none p-2 nav-item " style="color: rgb(252, 252, 252);" id="">review </a>
+        <a href="#" class=" p-2 nav-item text-decoration-none" style="color: rgb(252, 251, 251);" id="nav-item ">home</a>
+        <a href="#" class="p-2 nav-item text-decoration-none  " style="color: rgb(252, 250, 248);" id="nav-item ">about </a>
+        <a href="#" class="p-2 nav-item text-decoration-none  " style="color: rgb(247, 244, 242);" id="nav-item ">catagories</a>
+        <a href="#" class="text-decoration-none p-2 nav-item " style="color: rgb(252, 252, 252);" id="nav-item ">review </a>
         <div class="dropdown">
-         <a href="#" class="nav-link dropdown-toggle text-decoration-none" style="color: rgb(252, 252, 252);" data-bs-toggle="dropdown">events</a>
+         <a href="#" class="nav-link dropdown-toggle text-decoration-none" style="color: rgb(252, 252, 252);" data-bs-toggle="dropdown" id="nav-item ">events</a>
           <div class="dropdown-menu ">
             <div class="dropdown-item">
                 <a href="#" class="nav-link text-decoration-none" style="color: rgb(3, 3, 3);">conference</a>
@@ -375,24 +381,91 @@
             </div>
 
             </div>
-
-            
-              
-              
-                <!-- conference -->
-             
-
-
-
+    
         </div>
-
-
             </div>
 
 
+<div class="container border border-3 border-primary   " id="full">
+    <div class=" ">
+       
+        <h2 class="text-center m-2 p-2 text-primary ">book your order now</h2>
+     <form action="post" class="justify-content-center ">
+        <label for="name" class="form-label "><b>enter your email</b></label>
+        <input type="email" class="form-control" id="email"> <br>
 
+        <label for="password"  class="form-label "><b>enter your password</b></label>
+        <input type="password" class="form-control" value="" > <br>
+
+        <input type="submit" class="btn btn-outline-primary " value="submit">
+     </form> <br>
+    </div>
+</div>
     
+<div class="container">
+    <div class=" text-center ">
+        <div class=" justify-content-center p-2 ">
+              <h3>Thank you</h3>
+        </div>
+           
+        <h3 class="text-center ">
+            <span class="p-1 fs-5 " style="color: rgb(181, 13, 247); font-weight: 900;">EVENT LOVER </span>        
+            is Always Ready TO Make Your Event Unique And Memorable</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quaerat voluptas fuga.</p>
+    </div>
+    
+</div>
 
+
+
+
+    <footer class="container-fluid bg-black rounded-top-2  ">
+        <div class="row text-white p-2">
+           <div class="col">
+              <h6>home</h6>
+              <a href="#" class="text-decoration-none ">reviews</a> <br>
+              <a href="#" class="text-decoration-none ">favourite</a> <br>
+              <a href="#" class="text-decoration-none ">private event</a> <br>
+           </div>
+        
+           <div class="col">
+              <h6>about</h6>
+              <a href="#" class="text-decoration-none ">social event</a> <br>
+              <a href="#" class="text-decoration-none ">favourite</a> <br>
+              <a href="#" class="text-decoration-none ">concert</a> <br>
+           </div>
+        
+           <div class="col">
+              <h6>contact</h6>
+              <a href="#" class="text-decoration-none ">mega event</a> <br>
+              <a href="#" class="text-decoration-none ">favourite</a> <br>
+              <a href="#" class="text-decoration-none ">wedding event </a> <br>
+           </div>
+        
+           <div class="col">
+              <h6>book</h6>
+              <a href="#" class="text-decoration-none ">seminer</a> <br>
+              <a href="#" class="text-decoration-none ">favourite</a> <br>
+              <a href="#" class="text-decoration-none ">conference</a> <br>
+           </div>
+           
+           
+           
+           
+        </div> <br>
+           <h5> <span class="p-1 fs-5 " style="color: rgb(181, 13, 247); font-weight: 900;">EVENT LOVER </span>        
+            </h5>
+         <h6 class="text-justify text-white  "> orem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur perferendis alias ipsum voluptatibus deserunt asperiores nesciunt deleniti? Repellat eius vel deleniti, quisquam quibusdam, nulla voluptatibus inventore ipsum enim odit tempore impedit repudiandae error minus optio harum. Unde blanditiis, temporibus voluptate nulla recusandae ab veritatis amet eveniet nisi explicabo libero dolores! </h6>
+        
+         <br>
+         <div class="text-center ">
+           <a href="#"> <i class="fa-brands fa-facebook p-2 fs-3 text-primary "></i> </a>
+           <a href="#"><i class="fa-brands fa-square-instagram p-2 fs-3 text-primary"></i> </a>
+         </div>
+         <br>
+         </footer>
+         <div class="text-center text-white  container-fluid" style="background-color: rgba(66, 59, 59, 0.671);"> designed by prokriteedas@2024</div>
+        
 
 <body>
 </html>
